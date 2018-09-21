@@ -1,55 +1,83 @@
 <!doctype html>
 <html lang="en">
-		<head>
-		<meta charset="utf-8">
-		<title>Contact</title>
-		<style>
-/* From style */	
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<style>
+/* layout */
+#container {
+	width: 80%;
+	min-height: 90vh;
+	margin: auto;
+	border: 1px solid black;
+}
+#header {
+	border-bottom: 1px solid black;
+	padding: 10px;
+	text-align: center;
+	background-color: #3786A5;
+}
+#nav {
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+#main {
+	padding: 10px;
+}
+/* Form style */	
 		
 form {
 	width: 40vw;
 	margin: 20px auto;
-	border: 5px dotted blue;
+	border: 2px solid black;
 	padding: 20px;
 }
 </style>
-		</head>
+</head>
 
-		<body>
-<header>
-          <h1>Contact</h1>
-        </header>
-<!--NAVIGATION-->
-<nav> <a href="../index.html">Home</a> <a href="helloworld.html">Hello World</a> <a href="https://www.cphbusiness.dk/" target="_blank">My School</a> <a href="#">Contact</a> <a href="tables.html">Tables</a> </nav>
+<body>
+	<!-- Main layout container -->
 
-<!-- webform -->
-<form action="mailto:christine_due@yahoo.dk" method="post" enctype="text/plain">
-          <p>
-    <label>Name</label>
-  </p>
-          <p>
-    <input type="text" name="name" placeholder="Full name" autofocus required>
-  </p>
-          <p>
-    <label>Email</label>
-  </p>
-          <p>
-    <input type="email" name="Email" placeholder="Email" autofocus required >
-  </p>
-          <p>
-    <label>Your comment</label>
-  </p>
-          <p>
-    <textarea name="comment" placeholder="Type your message"></textarea>
-  </p>
-	<p>
-    <input type="radio" name="love">
-    I love this</p>
-          <p>
-    <input type="submit" value="Submit Form">
-  </p>
-        </form>
-			
-			
+<div id="container"> 
+    <div id="header">
+    <header>
+      <h1>Contact</h1>
+    </header>
+  </div>
+    <!--NAVIGATION-->
+  <div id="nav"> 
+    <nav> <a href="../index.html">Home</a> <a href="helloworld.html">Hello World</a> <a href="https://www.cphbusiness.dk/" target="_blank">My School</a> <a href="#">Contact</a> <a href="tables.html">Tables</a> </nav>
+  </div>
+	<div id="main"><!-- webform -->
+    <form action="mailto:christine_due@yahoo.dk" method="post" enctype="text/plain">
+      <p>
+        <label>Name</label>
+      </p>
+      <p>
+        <input type="text" name="name" placeholder="Full name" autofocus required>
+      </p>
+      <p>
+        <label>Email</label>
+      </p>
+      <p>
+        <input type="email" name="Email" placeholder="Email" autofocus required >
+      </p>
+      <p>
+        <label>Your comment</label>
+      </p>
+      <p>
+        <textarea name="comment" placeholder="Type your message"></textarea>
+      </p>
+      <p>
+        <input type="radio" name="love">
+        I love this</p>
+      <p>
+        <input type="submit" value="Submit Form">
+      </p>
+    </form></div>  
+    
+    
+  <div id="footer"></div>
+</div>
 </body>
 </html>

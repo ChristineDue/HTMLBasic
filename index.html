@@ -6,13 +6,48 @@
 <meta name="keywords" content="HTML,HTML5, Tim Berners-Lee, semantic">
 <meta name="author" content="Dr. Web">
 <title>What is HTML 5?</title>
+<style>
+/* layout */
+#container {
+	width: 80%;
+	min-height: 90vh;
+	margin: auto;
+	border: 1px solid black;
+}
+#header {
+	border-bottom: 1px solid black;
+	padding: 10px;
+	text-align: center;
+	background-color: #3786A5;
+}
+#nav {
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+#main {
+	padding: 10px;
+}
+/* Form style */	
+		
+form {
+	width: 40vw;
+	margin: 20px auto;
+	border: 2px solid black;
+	padding: 20px;
+	background-color: #2B5597;
+}
+</style>	
+	
 </head>
 <body>
-<header>
+	<!-- Main layout container -->
+
+<div id="container"> 
+    <div id="header"><header>
   <h1>Introduction to HTML</h1>
-</header>
-	<!--NAVIGATION-->
-	<nav>
+</header></div>
+    <!--NAVIGATION-->
+  <div id="nav"><nav>
 		
 		<a href="#">Home</a>
 	<a href="pages/helloworld.html">Hello World</a>
@@ -20,8 +55,10 @@
 		<a href="pages/contact.html">Contact</a>
 		<a href="tables.html">Tables</a>
 	</nav>
-
-<section>
+</div>
+	<!-- webform -->
+	<div id="main">
+		<section>
   <h2>What is HTML 5?</h2>
   <article>
     <h3>Tim Berners Lee &amp; the world wide web</h3>
@@ -50,6 +87,10 @@
       to parse. </p>
   </article>
 </section>
-<footer><small>Copyright &copy; 2017 Classroom materials. No rights reserved ;-).</small></footer>
+</div>
+  <div id="footer"><footer><small>Copyright &copy; 2017 Classroom materials. No rights reserved ;-).</small></footer>
+</div>
+</div>	
+	
 </body>
 </html>

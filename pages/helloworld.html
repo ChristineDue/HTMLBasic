@@ -3,21 +3,56 @@
 <head>
 <meta charset="utf-8">
 <title>Hello World here I am</title>
+	
+	<style>
+/* layout */
+#container {
+	width: 80%;
+	min-height: 90vh;
+	margin: auto;
+	border: 1px solid black;
+}
+#header {
+	border-bottom: 1px solid black;
+	padding: 10px;
+	text-align: center;
+	background-color: #3786A5;
+}
+#nav {
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+#main {
+	padding: 10px;
+}
+/* Form style */	
+		
+form {
+	width: 40vw;
+	margin: 20px auto;
+	border: 2px solid black;
+	padding: 20px;
+	background-color: #2B5597;
+}
+</style>
 </head>
 
 <body>
-<header><!--semantisk HTML: Sidehovet-->
+	<!-- Main layout container -->
+
+<div id="container"> 
+    <div id="header"><header><!--semantisk HTML: Sidehovet-->
   <h1>Hello World!</h1>
-</header>
-	<!--NAVIGATION-->
-	<nav><a href="../index.html">Home</a>
+</header></div>
+    <!--NAVIGATION-->
+  <div id="nav"><nav><a href="../index.html">Home</a>
 	<a href="#">Hello World</a>
 		<a href="https://www.cphbusiness.dk/" target="_blank">My School</a>
 		<a href="contact.html">Contact</a>
 		<a href="tables.html">Tables</a>
-	</nav>
-	
-<section>
+	</nav></div>
+	<!-- webform -->
+	<div id="main"><section>
   <h2>Section 1</h2>
   <article>
     <h3>Article 1</h3>
@@ -33,6 +68,15 @@
     <h3>Article 3</h3>
     <p>Suspendisse dictum augue sit amet faucibus ullamcorper. Aenean tellus magna, pellentesque a ex nec, eleifend suscipit neque. Integer aliquet nunc in elit vehicula, id tristique mi accumsan. Phasellus quis velit sed ante porta sodales vitae ac libero. Aliquam ex urna, sollicitudin eget scelerisque non, sodales at dolor. Donec posuere purus et ipsum consequat aliquet. Aenean viverra libero quis bibendum dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat augue ut neque blandit porta. Quisque metus nulla, fermentum facilisis velit et, dignissim porta elit. Vivamus nec quam volutpat, mattis ligula et, semper velit. Sed congue, velit vitae semper accumsan, tortor augue congue risus, vitae semper nunc dui a nulla. Nam magna tellus, placerat in porttitor in, consectetur vitae turpis. Cras vitae semper risus. Vestibulum malesuada pharetra arcu eget dignissim.</p>
   </article>
-</section>
+</section></div>
+  <div id="footer"></div>
+</div>
+	
+	
+	
+	
+
+	
+
 </body>
 </html>

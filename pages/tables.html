@@ -4,89 +4,132 @@
 <meta charset="utf-8">
 <title>Tables</title>
 <style>
-	/* CSS kommentar: embedded style */
+/* layout */
+#container {
+	width: 80%;
+	min-height: 90vh;
+	margin: auto;
+	border: 1px solid black;
+}
+#header {
+	border-bottom: 1px solid black;
+	padding: 10px;
+	text-align: center;
+	background-color: #3786A5;
+}
+#nav {
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+#main {
+	padding: 10px;
+}
+/* Form style */	
+		
+form {
+	width: 40vw;
+	margin: 20px auto;
+	border: 2px solid black;
+	padding: 20px;
+	background-color: #2B5597;
+}
+/* CSS kommentar: embedded style */
 td, tr {
 	border: 1px solid black;
 }
 /* CSS selector: HTML element table */
 	
-	table {
-		/* property + value */
-		width: 800px;
+table {
+	/* property + value */
+	width: 800px;
 	border: none;
 	border-collapse: collapse;
 }
+	
+	#head1 {
+		text-align: center;
+	}
 </style>
 </head>
 
 <body>
-	<header><h1>Tables</h1></header>
-	<!--NAVIGATION-->
-	<nav>
-		
-		<a href="../index.html">Home</a>
-	<a href="helloworld.html">Hello World</a>
-		<a href="https://www.cphbusiness.dk/" target="_blank">My School</a>
-		<a href="contact.html">Contact</a>
-		<a href="#">Tables</a>
-	</nav>
-									
+
+<!-- Main layout container -->
+
+<div id="container">
+<div id="header">
+  <header>
+    <h1>Tables</h1>
+  </header>
+</div>
+<!--NAVIGATION-->
+<div id="nav">
+  <nav> <a href="../index.html">Home</a> <a href="helloworld.html">Hello World</a> <a href="https://www.cphbusiness.dk/" target="_blank">My School</a> <a href="contact.html">Contact</a> <a href="#">Tables</a> </nav>
+</div>
+<!-- webform -->
+<div id="main">
 <table>
-  <caption>
-  The animal table
-  </caption>
-  <tbody>
+<caption>
+The animal table
+</caption>
+<tbody>
+  <tr>
+    <td id="head1" colspan= "3">
+        <strong>Predatory animals</strong>
+     </td>
+  </tr>
+  <tr>
+    <td><strong>Species</strong></td>
+    <td><strong>Latin name</strong></td>
+    <td><strong>Image</strong></td>
+  </tr>
+  <tr>
+    <td>Brown bear</td>
+    <td><em>Ursus arctos</em></td>
+    <td><img src="../images/brownbear.jpg" width="140" height="100" alt=""/>
+      <figcaption>Brown bear</figcaption></td>
+  </tr>
+  <tr>
+    <td>Badger</td>
+    <td><em>Meles meles</em></td>
+    <td><img src="../images/badgar.jpg" width="132" height="100" alt=""/>
+      <figcaption>Badger</figcaption></td>
+  </tr>
+  <tr>
+    <td>Fox</td>
+    <td><em>Vulpes Vulpes</em></td>
+    <td><img src="../images/fox.jpg" width="149" height="100" alt=""/>
+      <figcaption>Fox</figcaption></td>
+  </tr>
+  <tr>
+    <td>Sand cat</td>
+    <td><em>Felis margarita</em></td>
+    <td><img src="../images/sandcat.jpg" width="149" height="100" alt="Sand Cat"/>
+      <figcaption>Sand Cat</figcaption></td>
+  </tr>
+  <tr>
+    <td>Wild cat</td>
+    <td><em>Felis silvestris</em></td>
+    <td><img src="../images/wildcat.jpg" width="122" height="100" alt=""/>
+      <figcaption>Wild Cat</figcaption></td>
+  </tr>
+  <tr>
+    <td>Wolf</td>
+    <td><em>Canis lupus</em></td>
+    <td><img src="../images/wolf.jpg" width="149" height="100" alt=""/>
+      <figcaption>Wolf</figcaption></td>
+  </tr>
+</tbody>
+	</table>
+</div>
+<div id="footer">
+  <tfoot>
     <tr>
-      <td colspan="3"><center>
-          <strong>Predatory animals</strong></center></td>
-    </tr>
-    <tr>
-      <td><strong>Species</strong></td>
-      <td><strong>Latin name</strong></td>
-      <td><strong>Image</strong></td>
-    </tr>
-    <tr>
-      <td>Brown bear</td>
-      <td><em>Ursus arctos</em></td>
-      <td><img src="../images/brownbear.jpg" width="140" height="100" alt=""/>
-        <figcaption>Brown bear</figcaption></td>
-    </tr>
-    <tr>
-      <td>Badger</td>
-      <td><em>Meles meles</em></td>
-      <td><img src="../images/badgar.jpg" width="132" height="100" alt=""/>
-        <figcaption>Badger</figcaption></td>
-    </tr>
-    <tr>
-      <td>Fox</td>
-      <td><em>Vulpes Vulpes</em></td>
-      <td><img src="../images/fox.jpg" width="149" height="100" alt=""/>
-        <figcaption>Fox</figcaption></td>
-    </tr>
-    <tr>
-      <td>Sand cat</td>
-      <td><em>Felis margarita</em></td>
-      <td><img src="../images/sandcat.jpg" width="149" height="100" alt="Sand Cat"/>
-        <figcaption>Sand Cat</figcaption></td>
-    </tr>
-    <tr>
-      <td>Wild cat</td>
-      <td><em>Felis silvestris</em></td>
-      <td><img src="../images/wildcat.jpg" width="122" height="100" alt=""/>
-        <figcaption>Wild Cat</figcaption></td>
-    </tr>
-    <tr>
-      <td>Wolf</td>
-      <td><em>Canis lupus</em></td>
-      <td><img src="../images/wolf.jpg" width="149" height="100" alt=""/>
-        <figcaption>Wolf</figcaption></td>
-    </tr>
-    
-  </tbody>
-	<tfoot><tr>
       <td colspan="3">All pictures from
         <nav><a href="http://www.naturephoto-cz.com/mammals/predatory-animals.html" target="_blank">http://www.naturephoto-cz.com/mammals/predatory-animals.html</a></nav></td>
-    </tr></tfoot>
-</table>
+    </tr>
+  </tfoot>
+</div>
+</div>
 </body>
 </html>
