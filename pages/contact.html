@@ -35,49 +35,54 @@ form {
 </style>
 </head>
 
-<body>
-	<!-- Main layout container -->
+<body id="container">
 
-<div id="container"> 
-    <div id="header">
-    <header>
-      <h1>Contact</h1>
-    </header>
-  </div>
-    <!--NAVIGATION-->
-  <div id="nav"> 
-    <nav> <a href="../index.html">Home</a> <a href="helloworld.html">Hello World</a> <a href="https://www.cphbusiness.dk/" target="_blank">My School</a> <a href="#">Contact</a> <a href="tables.html">Tables</a> </nav>
-  </div>
-	<div id="main"><!-- webform -->
-    <form action="mailto:christine_due@yahoo.dk" method="post" enctype="text/plain">
-      <p>
-        <label>Name</label>
-      </p>
-      <p>
-        <input type="text" name="name" placeholder="Full name" autofocus required>
-      </p>
-      <p>
-        <label>Email</label>
-      </p>
-      <p>
-        <input type="email" name="Email" placeholder="Email" autofocus required >
-      </p>
-      <p>
-        <label>Your comment</label>
-      </p>
-      <p>
-        <textarea name="comment" placeholder="Type your message"></textarea>
-      </p>
-      <p>
-        <input type="radio" name="love">
-        I love this</p>
-      <p>
-        <input type="submit" value="Submit Form">
-      </p>
-    </form></div>  
-    
-    
-  <div id="footer"></div>
+<!-- Main layout container -->
+
+<div id="header">
+  <header>
+    <h1>Contact</h1>
+  </header>
 </div>
+<!--NAVIGATION-->
+<div id="nav">
+  <nav> 
+	  <a href="../index.html">Home</a> 
+	  <a href="helloworld.html">Hello World</a> 
+	  <a href="https://www.cphbusiness.dk/" target="_blank">My School</a> 
+	  <a href="#">Contact</a> 
+	  <a href="tables.html">Tables</a> 
+	
+	</nav>
+</div>
+<div id="main"><!-- webform -->
+  <form action="mailto:christine_due@yahoo.dk" method="post" enctype="text/plain">
+    <p>
+      <label>Name</label>
+    </p>
+    <p>
+      <input type="text" name="name" placeholder="Full name" autofocus required>
+    </p>
+    <p>
+      <label>Email</label>
+    </p>
+    <p>
+      <input type="email" name="Email" placeholder="Email" autofocus required >
+    </p>
+    <p>
+      <label>Your comment</label>
+    </p>
+    <p>
+      <textarea name="comment" placeholder="Type your message"></textarea>
+    </p>
+    <p>
+      <input type="radio" name="love">
+      I love this</p>
+    <p>
+      <input type="submit" value="Submit Form">
+    </p>
+  </form>
+</div>
+<div id="footer"></div>
 </body>
 </html>
